@@ -1,0 +1,56 @@
+div {
+  /* animation: mymove forwards reverse 1s; */
+  animation: caca forwards 4s infinite;
+  animation-delay: 2s;
+}
+
+@keyframes caca {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+
+  25% {
+    left: 200px;
+    top: 0px;
+  }
+
+  50% {
+    left: 200px;
+    top: 200px;
+  }
+
+  75% {
+    left: 0px;
+    top: 200px;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+
+
+}
+
+div:hover {
+  animation-play-state: paused;
+}
+
+
+h2 {
+  animation: bond 1s infinite alternate;
+  animation-timing-function: ease;
+  animation-delay: 1s;
+  position: absolute;
+}
+
+@keyframes bond {
+  0% {
+    bottom: 100px;
+  }
+  100% {
+    bottom: 0%;
+    transform: scaleY(0.5);
+  }
+}

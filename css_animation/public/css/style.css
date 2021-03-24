@@ -1,0 +1,48 @@
+div {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background-color: purple;
+    
+}
+div:active{
+    animation-name: exemple;
+    animation-duration: 10s;
+}
+
+body{
+    margin: 0;
+}
+/* @keyframes exemple{
+    from {
+        background-color: purple;
+        top: 0%;
+    }
+    to {
+        background-color: red;
+        top: 50%;
+    }
+} */
+
+@keyframes exemple {
+    0% {
+        top: 0%;
+        left: 0%;
+    }
+    25%{
+        top: 0%;
+        left: 50%;
+    }
+    50%{
+        top: 50%;
+        left: 50%;
+    }
+    75%{
+        top: 50%;
+        left: 0%;
+    }
+    100%{
+        top: 0%;
+        left: 0%;
+    }
+}
